@@ -1,0 +1,16 @@
+body{
+background-color: #d0e4fe;
+}
+h1 {
+color: blue;
+text-align: center;
+font-family: "Boycott";
+}    
+p {
+font-family: "Calibri";
+font-size: 20px;
+}
+#para1 {
+text-align: center;
+color: red;
+}
