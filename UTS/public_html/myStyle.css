@@ -1,0 +1,50 @@
+	    #header {
+                background-color: black;
+                color: white;
+                text-align: center;
+                padding: 30px;
+            }
+            #nav {
+                line-height:30px;
+                background-color:silver;
+                height:400px;
+                width:250px;
+                float:left;
+                padding:5px;
+            }
+            #section {
+                width:1000px;
+                float:left;
+                padding:10px;
+            }
+            #footer {
+                background-color: black;
+                color: white;
+                clear: both;
+                text-align: center;
+                padding: 5px;
+            }
+            h1 {
+                text-align: center;
+                font-family: "Boycott";
+                color: white;
+            }
+            h2, h3, h7 {
+                text-align: center;
+                font-family: "Calibri";
+                color: white;
+            }
+            p {
+                font-family: "Calibri";
+                color: white;
+                text-align: center;
+            }
+            li {
+                font-family: "Calibri";
+                color: white;
+            }
+            a:link, a:visited {
+                font-family: "Calibri";
+                color: white;
+                text-decoration: none;
+            }
