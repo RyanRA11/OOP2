@@ -1,0 +1,295 @@
+<html>
+    <head>
+        <title>FLN</title>
+        <style>
+            td {
+                font-family: "calibri";
+            }
+            h3 {
+                color: white;
+            }
+        </style>
+        <script>
+            window.alert("Welcome to FLN Airlines");
+            function myFunction() {
+                if (document.fln.toj[0].checked === true)
+                {
+                    tj = "One Way";
+                } else if (document.fln.toj[1].checked === true)
+                {
+                    tj = "Return";
+                }
+                document.fln.toj2.value = tj;
+
+                var dc = (document.fln.dpc.value);
+                document.fln.dpc2.value = dc;
+
+                var ddt = (document.fln.dt.value);
+                document.fln.dt2.value = ddt;
+
+                var ac = (document.fln.arc.value);
+                document.fln.arc2.value = ac;
+
+                var rd = (document.fln.rdt.value);
+                document.fln.rdt2.value = rd;
+
+                var adl = (document.fln.ad.value);
+                document.fln.ad2.value = adl;
+
+                var chl = (document.fln.ch.value);
+                document.fln.ch2.value = chl;
+
+                var cs = (document.fln.cos.value);
+                document.fln.cos2.value = cs;
+
+                var chl = (document.fln.ch.value);
+                var cs2 = (document.fln.cos.value);
+                if ((cs2 === "Executive") && (chl > 1))
+                {
+                    vn = 14111199;
+                } else if ((cs2 === "Executive") && (chl <= 1))
+                {
+                    vn = 21032015;
+                } else if ((cs2 === "Economy") && (chl > 1))
+                {
+                    vn = 99141111;
+                } else if ((cs2 === "Economy") && (chl <= 1))
+                {
+                    vn = 150321;
+                } else
+                {
+                    vn = "N/A";
+                }
+                document.fln.n.value = vn;
+            }
+        </script>
+    </head>
+    <body>
+        <form name="fln">
+            <table cellpadding="5" border="3" width="100%">
+                <tr>
+                    <td align="center">
+                        <font><h1>FLN AIRLINES</h1></font>  
+                    </td>
+                </tr>
+            </table>
+            <br>
+            <table cellpadding="5" border="3" width="100%">
+                <tr>
+                    <td width="60%">
+                        <table align="center">
+                            <tr>
+                                <td align="center" colspan="10" bgcolor="grey"><h3>DOMESTIC FLIGHT</h3></td>
+                            </tr>
+                            <tr>
+                                <td>Type of Journey</td>
+                                <td>:</td>
+                                <td><input type="radio" name="toj">One Way</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td><input type="radio" name="toj">Return</td>
+                            </tr>
+                            <tr>
+                                <td>Place of City</td>
+                                <td>:</td>
+                                <td>Departure</td>
+                                <td><select name="dpc">
+                                        <option>Select</option>
+                                        <option>Bandung</option>
+                                        <option>Jakarta</option>
+                                        <option>Medan</option>
+                                        <option>Surabaya</option>
+                                        <option>Yogyakarta</option>
+                                    </select></td>
+                                <td></td>
+                                <td></td>
+                                <td>Date</td>
+                                <td></td>
+                                <td></td>
+                                <td><select name="dt">
+                                        <option>Select</option>
+                                        <option>1</option>
+                                        <option>2</option>
+                                        <option>3</option>
+                                        <option>4</option>
+                                        <option>5</option>
+                                        <option>6</option>
+                                        <option>7</option>
+                                        <option>8</option>
+                                        <option>9</option>
+                                        <option>10</option>
+                                        <option>11</option>
+                                        <option>12</option>
+                                        <option>13</option>
+                                        <option>14</option>
+                                        <option>15</option>
+                                        <option>16</option>
+                                        <option>17</option>
+                                        <option>18</option>
+                                        <option>19</option>
+                                        <option>20</option>
+                                        <option>21</option>
+                                        <option>22</option>
+                                        <option>23</option>
+                                        <option>24</option>
+                                        <option>25</option>
+                                        <option>26</option>
+                                        <option>27</option>
+                                        <option>28</option>
+                                        <option>29</option>
+                                        <option>30</option>
+                                        <option>31</option>
+                                    </select></td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td>Arrival</td>
+                                <td><select name="arc">
+                                        <option>Select</option>
+                                        <option>Bandung</option>
+                                        <option>Jakarta</option>
+                                        <option>Medan</option>
+                                        <option>Surabaya</option>
+                                        <option>Yogyakarta</option>
+                                    </select></td>
+                                <td></td>
+                                <td></td>
+                                <td>Return Date</td>
+                                <td></td>
+                                <td></td>
+                                <td><select name="rdt">
+                                        <option>Select</option>
+                                        <option>1</option>
+                                        <option>2</option>
+                                        <option>3</option>
+                                        <option>4</option>
+                                        <option>5</option>
+                                        <option>6</option>
+                                        <option>7</option>
+                                        <option>8</option>
+                                        <option>9</option>
+                                        <option>10</option>
+                                        <option>11</option>
+                                        <option>12</option>
+                                        <option>13</option>
+                                        <option>14</option>
+                                        <option>15</option>
+                                        <option>16</option>
+                                        <option>17</option>
+                                        <option>18</option>
+                                        <option>19</option>
+                                        <option>20</option>
+                                        <option>21</option>
+                                        <option>22</option>
+                                        <option>23</option>
+                                        <option>24</option>
+                                        <option>25</option>
+                                        <option>26</option>
+                                        <option>27</option>
+                                        <option>28</option>
+                                        <option>29</option>
+                                        <option>30</option>
+                                        <option>31</option>
+                                    </select></td>
+                            </tr>
+                            <tr>
+                                <td>Number Of Passenger</td>
+                                <td>:</td>
+                                <td>Adult</td>
+                                <td><select name="ad">
+                                        <option>Select</option>
+                                        <option>1</option>
+                                        <option>2</option>
+                                        <option>3</option>
+                                        <option>4</option>
+                                        <option>5</option>
+                                    </select></td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td>Child</td>
+                                <td><select name="ch">
+                                        <option>Select</option>
+                                        <option>0</option>
+                                        <option>1</option>
+                                        <option>2</option>
+                                        <option>3</option>
+                                        <option>4</option>
+                                        <option>5</option>
+                                    </select></td>		
+                            </tr>
+                            <tr>
+                                <td>Class Of Service</td>
+                                <td>:</td>
+                                <td><select name="cos">
+                                        <option>Select</option>
+                                        <option>Economy</option>
+                                        <option>Executive</option>
+                                    </select></td>
+                            </tr>
+                            <tr>
+                                <td bgcolor="grey" align="right" colspan="10"><input type="button" value="Book" onclick="myFunction()"> <input type="reset" value="Cancel"></td>
+                            </tr>
+                        </table>
+                    </td>
+                    <td>
+                        <table align="center">
+                            <tr>
+                                <td align="center" colspan="7" bgcolor="grey"><h3>DOMESTIC FLIGHT PLAN</h3></td>
+                            </tr>
+                            <tr>
+                                <td>Type of Journey</td>
+                                <td>:</td>
+                                <td><input type="text" name="toj2"></td>
+                            </tr>
+                            <tr>
+                                <td>Departure City</td>
+                                <td>:</td>
+                                <td><input type="text" name="dpc2"></td>
+                            </tr>
+                            <tr>
+                                <td>Departure Date</td>
+                                <td>:</td>
+                                <td><input type="text" name="dt2" size="5"> May 2016</td>
+                            </tr>
+                            <tr>
+                                <td>Arrival City </td>
+                                <td>:</td>
+                                <td><input type="text" name="arc2"></td>
+                            </tr>
+                            <tr>
+                                <td>Return Date</td>
+                                <td>:</td>
+                                <td><input type="text" name="rdt2" size="5"> May 2016</td>
+                            </tr>
+                            <tr>
+                                <td>Adult</td>
+                                <td>:</td>
+                                <td><input type="text" name="ad2"></td>
+                            </tr>
+                            <tr>
+                                <td>Child</td>
+                                <td>:</td>
+                                <td><input type="text" name="ch2"></td>
+                            </tr>
+                            <tr>
+                                <td>Class Of Service</td>
+                                <td>:</td>
+                                <td><input type="text" name="cos2"></td>
+                            </tr>
+                            <tr bgcolor="grey">
+                                <td align="center" colspan="7">
+                                    <font color="white">Your Verification Code</font>
+                                    <br><input type="text" name="n"></td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </body>
+</html>
