@@ -1,0 +1,5 @@
+Abstraki (Abstraction)
+Proses identifikasi aspek-aspek yang perlu  dari entitas dan mengabaikan property yang tidak penting.
+
+Enkapsulasi (Encapsulation)
+Kombinasi data dan fungsionalitas dalam sebuah unit tunggal sebagai bentuk untuk menyembunyikan detail informasi.
